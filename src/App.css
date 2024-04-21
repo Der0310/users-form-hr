@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color:white;
+  color:black;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  object-fit: contain;
+}
+ul {
+  list-style: none;
+}
+input,
+button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-family: inherit;
+}
+button {
+  border: none;
+  padding: 5px 12px;
+  border-radius: 10px;
+  transition: tranform .5s;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: tranform .5s;
+
+}
+
+/*-------App--------*/
+.app__header {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.app__container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.app__create:hover {
+  border: 2px solid gray;
+}
+.app__create {
+  background-color: #555A88;
+  color: white;
+  border-radius: 2px;
+
+}

@@ -1,0 +1,50 @@
+.form__back {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #555a895b;/*este difuminado hace q los del fondo se vean*/
+    position: fixed;/*al usar esto hay q usar el top y el left y lo pone al frente*/
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.form__back.active {
+    display: flex;
+}
+.form {
+    position: relative;/*este hace q el hijo se posicione*/
+    height: 350px;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+.form__close {
+    background-color: white;
+    padding: 2px 5px;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+.form__close:hover {
+    color:  red;
+}
+.form__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form__btn {
+    background-color:#555A88;
+    border-radius: 2px;
+    color: white;
+}
+input {
+    background-color:  #555a890a;
+    border: 2px solid  #555a890a ;
+}
