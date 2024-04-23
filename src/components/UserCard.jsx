@@ -21,7 +21,7 @@ const UserCard = ({user, deleteUser,setUpdateUser}) => {
         <hr />
         <ul className='user__list'>
             <li className='user__item'><span>Email: </span><span>{user.email}</span></li>
-            <li className='user__item'><span>Birthday: </span><span><ion-icon name="gift-outline"></ion-icon>{user.birthday}</span></li>
+            <li className='user__item'><span>Birthday: </span><span><ion-icon name="gift-outline" className='user__icon'></ion-icon>{user.birthday}</span></li>
         </ul>
         <hr />
         <div className='user__buttons'>
